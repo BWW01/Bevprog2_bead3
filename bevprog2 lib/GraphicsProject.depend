@@ -816,7 +816,7 @@
 	<string>
 	<vector>
 
-1715603005 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\main.cpp
+1715886395 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\main.cpp
 	"graphics.hpp"
 	"parentwidget.hpp"
 	"parentwindow.hpp"
@@ -827,13 +827,14 @@
 	"textbox.hpp"
 	"listbox.hpp"
 	"button.hpp"
+	<iostream>
 
-1715423481 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.hpp
+1715886777 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.hpp
 	"graphics.hpp"
 	"parentwidget.hpp"
 	<vector>
 
-1715423565 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.cpp
+1715886777 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.cpp
 	"parentwindow.hpp"
 	"graphics.hpp"
 
@@ -880,7 +881,7 @@
 	<iostream>
 	<string>
 
-1715602663 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\button.cpp
+1715885187 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\button.cpp
 	"button.hpp"
 	"graphics.hpp"
 	<iostream>
