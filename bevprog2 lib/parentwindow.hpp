@@ -15,6 +15,8 @@ public:
     void quit(bool stop);
 
 protected:
+    const int XX = 1080;
+    const int YY = 720;
     std::vector<ParentWidget*> widgettarto;
     bool stop = false; // Initialize stop variable
 };

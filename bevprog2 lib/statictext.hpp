@@ -1,7 +1,6 @@
 #ifndef STATICTEXT_HPP_INCLUDED
 #define STATICTEXT_HPP_INCLUDED
 
-#include "graphics.hpp"
 #include "parentwidget.hpp"
 #include <string>
 

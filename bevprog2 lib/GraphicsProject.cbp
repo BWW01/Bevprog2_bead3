@@ -58,6 +58,8 @@
 		</Linker>
 		<Unit filename="button.cpp" />
 		<Unit filename="button.hpp" />
+		<Unit filename="gamewindow.cpp" />
+		<Unit filename="gamewindow.hpp" />
 		<Unit filename="graphicslib/graphics.cpp" />
 		<Unit filename="graphicslib/lib_test.cpp">
 			<Option target="lib_test" />
@@ -68,6 +70,8 @@
 			<Option target="Debug" />
 			<Option target="Release" />
 		</Unit>
+		<Unit filename="menuwindow.cpp" />
+		<Unit filename="menuwindow.hpp" />
 		<Unit filename="parentwidget.cpp" />
 		<Unit filename="parentwidget.hpp" />
 		<Unit filename="parentwindow.cpp" />

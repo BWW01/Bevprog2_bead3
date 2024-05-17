@@ -816,7 +816,7 @@
 	<string>
 	<vector>
 
-1715886395 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\main.cpp
+1715943146 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\main.cpp
 	"graphics.hpp"
 	"parentwidget.hpp"
 	"parentwindow.hpp"
@@ -827,27 +827,26 @@
 	"textbox.hpp"
 	"listbox.hpp"
 	"button.hpp"
-	<iostream>
+	"menuwindow.hpp"
+	"gamewindow.hpp"
 
-1715886777 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.hpp
+1715950943 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.hpp
 	"graphics.hpp"
 	"parentwidget.hpp"
 	<vector>
 
-1715886777 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.cpp
+1715943908 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\parentwindow.cpp
 	"parentwindow.hpp"
 	"graphics.hpp"
 
-1715423368 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\statictext.hpp
-	"graphics.hpp"
+1715945651 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\statictext.hpp
 	"parentwidget.hpp"
 	<string>
 
-1715423356 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\statictext.cpp
+1715946267 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\statictext.cpp
 	"statictext.hpp"
 	"graphics.hpp"
 	<string>
-	<iostream>
 
 1715431503 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\textbox.cpp
 	"textbox.hpp"
@@ -865,7 +864,7 @@
 	<iostream>
 	<string>
 
-1715432044 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\spinbox.hpp
+1715948560 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\spinbox.hpp
 	"graphics.hpp"
 	"parentwidget.hpp"
 
@@ -881,14 +880,48 @@
 	<iostream>
 	<string>
 
-1715885187 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\button.cpp
+1715944495 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\button.cpp
 	"button.hpp"
 	"graphics.hpp"
 	<iostream>
 	<string>
 
-1715602657 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\button.hpp
+1715944495 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\button.hpp
 	"graphics.hpp"
 	"parentwidget.hpp"
 	"functional"
+
+1715950943 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\menuwindow.cpp
+	"menuwindow.hpp"
+	"tictactoe_single.hpp"
+	"graphics.hpp"
+	"statictext.hpp"
+	"button.hpp"
+	"gamewindow.hpp"
+
+1715950755 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\menuwindow.hpp
+	"parentwindow.hpp"
+
+1715945508 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\gamewindow.cpp
+	"parentwidget.hpp"
+	"parentwindow.hpp"
+	"spinbox.hpp"
+	"statictext.hpp"
+	<vector>
+	<string>
+	"textbox.hpp"
+	"listbox.hpp"
+	"button.hpp"
+	"gamewindow.hpp"
+
+1715950943 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\gamewindow.hpp
+	"parentwindow.hpp"
+
+1715950810 source:c:\users\kolba\onedrive\asztali gép\bevprog2 lib\tictactoe_single.cpp
+	"tictactoe_single.hpp"
+	"menuwindow.hpp"
+	"graphics.hpp"
+
+1715950413 c:\users\kolba\onedrive\asztali gép\bevprog2 lib\tictactoe_single.hpp
+	"parentwidget.hpp"
 

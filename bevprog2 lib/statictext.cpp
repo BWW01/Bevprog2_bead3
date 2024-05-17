@@ -1,7 +1,6 @@
 #include "statictext.hpp"
 #include "graphics.hpp"
 #include <string>
-#include <iostream>
 using namespace genv;
 
 StaticText::StaticText(ParentWindow *p,int x, int y,int textsize, std::string stext):

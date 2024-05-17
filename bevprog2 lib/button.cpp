@@ -18,6 +18,7 @@ void Button::draw()
     } else {
         gout << move_to(_x, _y) << color(222, 222, 222) << box(_sx, _sy);
     }
+    gout.load_font("LiberationSans-Regular.ttf",_sy,1);
     gout << move_to(_x + (_sx - gout.twidth(label)) / 2, _y + (_sy - gout.cascent() - gout.cdescent()) / 2) << color(0, 0, 0) << text(label);
 }
 
