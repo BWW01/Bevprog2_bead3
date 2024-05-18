@@ -16,7 +16,9 @@ using namespace genv;
 
 int main()
 {
+
     Menu menu_window;
+    menu_window.initwindow();
     menu_window.run(); // Initialize and run the menu window
 
     return 0;

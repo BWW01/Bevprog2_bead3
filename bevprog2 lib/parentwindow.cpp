@@ -2,17 +2,17 @@
 #include "graphics.hpp"
 using namespace genv;
 
-void ParentWindow::initwindow(int XX, int YY)
-{
+void ParentWindow::initwindow() {
     gout.open(XX, YY);
+
 }
 
-void ParentWindow::mainloop(int XX, int YY)
-{
-
+void ParentWindow::mainloop() {
+    gin.timer(50);
     event ev;
     int focus = -1;
     while (gin >> ev && ev.keycode != key_escape && !stop) {
+            handle(ev);
         gout << move_to(0, 0) << color(0, 0, 0) << box(XX, YY);
         if (ev.type == ev_mouse && ev.button == btn_left) {
             for (size_t i = 0; i < widgettarto.size(); i++) {
@@ -31,7 +31,6 @@ void ParentWindow::mainloop(int XX, int YY)
     }
 }
 
-void ParentWindow::quit(bool stop)
-{
+void ParentWindow::quit(bool stop) {
     this->stop = stop; // Stop the main loop
 }

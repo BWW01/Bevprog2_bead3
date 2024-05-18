@@ -1,16 +1,16 @@
-// tictactoe_single.cpp
 #include "tictactoe_single.hpp"
-#include "menuwindow.hpp" // Include Menu class header file to resolve the error
 #include "graphics.hpp"
+#include <iostream>
+
 using namespace genv;
-TicTacToe_single::TicTacToe_single(ParentWindow *p, int x, int y, int sx, int sy, int _player)
-    : ParentWidget(p, x, y, sx, sy), _player(_player) {
-    _state = 0;
-}
+using namespace std;
+
+TicTacToe_single::TicTacToe_single(ParentWindow *p, int x, int y, int sx, int sy)
+    : ParentWidget(p, x, y, sx, sy), _state(0){}
 
 void TicTacToe_single::draw() {
     switch (_state) {
-    case 0:
+    default:
         gout << move_to(_x, _y)
              << color(255, 255, 255)
              << box(_sx, _sy)
@@ -38,23 +38,19 @@ void TicTacToe_single::draw() {
 }
 
 void TicTacToe_single::handle(genv::event ev) {
-    if (interact(ev.pos_x, ev.pos_y) && ev.button == 1 && _state == 0) {
+    if (ev.button == btn_left && ev.type == ev_mouse && interact(ev.pos_x, ev.pos_y) && _state == 0) {
         // Toggle between players
-        _player = (_player == 1) ? 2 : 1;
-
-        // Update the state
-        _state = (_player == 1) ? 1 : 2;
-
-        if (_player == 1) {
-            _state = 1;
-            _player = 2;
-        } else if (_player == 2) {
-            _state = 2;
-            _player = 1;
-        }
-
-
+        _state = most; // Update the state according to the current player
+        // Optionally, you can also notify the parent window or perform any additional actions here
     }
+}
+
+
+void TicTacToe_single::statebe(int p) {
+    most = p;
+    if(most == 0){_state = 1;}
+    if(most == 1){_state = 2;}
+    if(most == 2){_state = 0;}
 }
 
 bool TicTacToe_single::is_active() {

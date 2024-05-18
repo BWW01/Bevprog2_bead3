@@ -82,6 +82,8 @@
 		<Unit filename="statictext.hpp" />
 		<Unit filename="textbox.cpp" />
 		<Unit filename="textbox.hpp" />
+		<Unit filename="tictactoe_single.cpp" />
+		<Unit filename="tictactoe_single.hpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
