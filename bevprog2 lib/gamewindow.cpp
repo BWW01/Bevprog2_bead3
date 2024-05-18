@@ -14,18 +14,16 @@
 
 using namespace genv;
 using namespace std;
-
 // Constructor implementation
-Game::Game() : ParentWindow(), player(1), meret(25) {
+Game::Game(int meret) : ParentWindow(), meret(meret) {
     // Initialize the vector of TicTacToe_single pointers
     for (int i = 0; i < meret; ++i) {
         for (int j = 0; j < meret; ++j) {
-            tt.push_back(new TicTacToe_single(this, 0 + j * 50, 0 + i * 50, 50, 50));
+            tt.push_back(new TicTacToe_single(this, 0 + j * 720/meret, 0 + i * 720/meret, 720/meret, 720/meret));
         }
     }
-    Button *quitb = new Button(this, 255, 500, 200, 40, "quit", [this]() { this->quit(); });
+    Button *quitb = new Button(this, 1000, 700, 80, 20, "quit", [this]() { this->quit(); });
 }
-
 
 void Game::run() {
     Menu menu;
@@ -39,5 +37,13 @@ void Game::quit() {
 }
 
 void Game::handle(genv::event ev) {
+    if (ev.type == ev_mouse && ev.button == btn_left) {
+         for (auto& a : tt) {
+                if(a->interact(ev.pos_x,ev.pos_y)){
+                    a->statebe(p % 2);
+                }
 
+        }
+        p++; // Increment player after handling the event
+    }
 }

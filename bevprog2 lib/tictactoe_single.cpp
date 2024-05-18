@@ -19,20 +19,28 @@ void TicTacToe_single::draw() {
              << box(_sx - _sx * 0.1, _sy - _sy * 0.1);
         break;
     case 1:
+        gout.load_font("LiberationSans-Regular.ttf", _sy*1.3,1);
         gout << move_to(_x, _y)
-             << color(0, 255, 0)
+             << color(255, 255, 255)
              << box(_sx, _sy)
              << move_to(_x + _sx * 0.05, _y + _sy * 0.05)
-             << color(55, 12, 1)
-             << box(_sx - _sx * 0.1, _sy - _sy * 0.1);
+             << color(0, 0, 0)
+             << box(_sx - _sx * 0.1, _sy - _sy * 0.1)
+             << move_to(_x+_sx*0.05, _y-_sy*0.23)
+             << color(0,255,0)
+             << text("X");
         break;
     case 2:
-        gout << move_to(_x, _y)
-             << color(255, 0, 0)
+        gout.load_font("LiberationSans-Regular.ttf", _sy*1.3,1);
+       gout << move_to(_x, _y)
+             << color(255, 255, 255)
              << box(_sx, _sy)
              << move_to(_x + _sx * 0.05, _y + _sy * 0.05)
-             << color(55, 12, 1)
-             << box(_sx - _sx * 0.1, _sy - _sy * 0.1);
+             << color(0, 0, 0)
+             << box(_sx - _sx * 0.1, _sy - _sy * 0.1)
+             << move_to(_x, _y-_sy*0.23)
+             << color(255,0,0)
+             << text("O");
         break;
     }
 }

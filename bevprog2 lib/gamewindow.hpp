@@ -7,13 +7,14 @@
 
 class Game : public ParentWindow {
 public:
-    Game(); // Constructor
+    Game(int meret); // Constructor
     void quit();
+    int p; // Player state
     void run(); // New method to run the menu window
+    int meret;
     virtual void handle(genv::event ev);
 protected:
-    int player;
-    int meret;
+
     std::vector<TicTacToe_single*> tt; // Declare tt as a vector of pointers
 };
 

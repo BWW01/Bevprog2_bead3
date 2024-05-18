@@ -47,6 +47,11 @@ void SpinBox::handle(event ev)
 
 
 }
+
+int SpinBox::getValue(){
+ return _value;
+}
+
 bool SpinBox::is_active()
 {
     return focus;

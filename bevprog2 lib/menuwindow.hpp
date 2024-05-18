@@ -5,6 +5,7 @@
 #include "tictactoe_single.hpp"
 #include <thread> // Include <thread> for std::thread
 #include <chrono> // Include <chrono> for time-related functions
+#include "spinbox.hpp"
 
 class Menu : public ParentWindow
 {
@@ -12,12 +13,14 @@ private:
     int _current_player;
     int player;
     int meret;
+    SpinBox *howm;
     int p; // Player state
     std::vector<TicTacToe_single*> tt;
     std::thread timer_thread; // Declare timer_thread as a member variable
     void timer_thread_function(); // Declaration of timer_thread_function
 public:
     Menu();
+
     void quit();
     void start();
     void run(); // New method to run the menu window
